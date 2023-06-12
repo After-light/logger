@@ -1,0 +1,104 @@
+.popup_login_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  color: #000;
+  transition: all 0.8s ease;
+}
+
+.popup_login_item>*:not(:last-child) {
+  margin-right: 16px;
+}
+
+.popup_login_item:not(.popup_active_item):hover {
+  background-color: #dae8f6;
+}
+
+.popup_active_item {
+  color: #fff;
+  background-color: #3280fc;
+}
+
+.popup_active_item .popup_login_item_info>div {
+  color: #ebf2f9;
+}
+
+.popup_active_item .popup_login_item_toolbar>.icon {
+  color: rgb(255 255 255 / 20%);
+}
+
+.popup_active_item .popup_login_item_toolbar>.icon-eye-close:hover {
+  color: rgb(255 255 255 / 60%);
+}
+
+.popup_active_item .popup_login_item_toolbar>.icon-eye-open {
+  color: #fff;
+}
+
+
+.popup_login_item_icon {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+}
+
+.popup_login_item .popup_login_item_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.popup_login_item .popup_login_item_info>h4 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.popup_login_item_info>*:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.popup_login_item_heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.popup_divider {
+  width: 0.5px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, transparent, #ccc, transparent);
+}
+
+.popup_login_item_toolbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.popup_login_item_toolbar>.icon {
+  font-size: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  transition: all 0.5s ease;
+}
+
+.popup_login_item_toolbar>.icon-eye-open {
+  color: #3280fc;
+}
+
+.popup_login_item_toolbar>.icon-eye-close:hover {
+  color: #555;
+}

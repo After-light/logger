@@ -1,0 +1,215 @@
+.manage_login_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  color: #000;
+  transition: all 0.8s ease;
+}
+
+.manage_login_item>*:not(:last-child) {
+  margin-right: 16px;
+}
+
+.manage_login_item:not(.manage_active_item):hover {
+  background-color: #dae8f6;
+}
+
+.manage_active_item {
+  color: #fff;
+  background-color: #3280fc;
+}
+
+.manage_active_item .manage_login_item_info>div {
+  color: #ebf2f9;
+}
+
+.manage_active_item .manage_login_item_toolbar>.icon {
+  color: rgb(255 255 255 / 20%);
+}
+
+.manage_active_item .manage_login_item_toolbar>.icon:hover {
+  color: rgb(255 255 255 / 60%);
+}
+
+.manage_login_item_icon {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+}
+
+.manage_login_item .manage_login_item_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.manage_login_item .manage_login_item_info>h4 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.manage_login_item_info>*:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.manage_login_item_heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.manage_divider {
+  width: 0.5px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, transparent, #ccc, transparent);
+}
+
+.manage_login_item_toolbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.manage_login_item_toolbar>.icon {
+  font-size: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  transition: all 0.5s ease;
+}
+
+.manage_login_item_toolbar>.icon:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.manage_login_item_toolbar>.icon:hover {
+  color: #3280fc;
+}
+
+.manage_del_modal_content {
+  margin-bottom: 25px;
+}
+
+.manage_del_modal_btn_group {
+  text-align: right;
+}
+
+/*------------------------------ 修改 modal start ------------------------------*/
+.manage_update_modal {
+  padding: 0 16px;
+}
+
+.manage_update_modal>*:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.manage_image_container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.manage_image_container img {
+  width: 80px;
+  height: 80px;
+}
+
+.manage_icon_update {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.manage_icon_update i {
+  font-size: 20px;
+}
+
+.manage_content {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.manage_content>li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.manage_content>li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.manage_content li>label {
+  width: 60px;
+  font-size: 14px;
+  text-align-last: justify;
+  font-weight: normal;
+  margin: 0 5px 0 0;
+}
+
+.manage_content li>label::after {
+  content: '*';
+  color: red;
+}
+
+.manage_content li .manage_content_input {
+  flex: 1;
+}
+
+.manage_web_name_content::after {
+  content: '网站名为必填项';
+  font-size: 12px;
+  color: red;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+.manage_user_content::after {
+  content: '用户名为必填项';
+  font-size: 12px;
+  color: red;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+.manage_password_content::after {
+  content: '密码为必填项';
+  font-size: 12px;
+  color: red;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+.manage_button_group {
+  display: flex;
+  justify-content: end;
+}
+
+.manage_button_group>* {
+  margin-left: 10px;
+}
+
+/*------------------------------ 修改 modal end ------------------------------*/

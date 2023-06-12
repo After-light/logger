@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/zui.min.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/create.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="main">
+        <ul class="create_nav nav nav-tabs">
+          <li class="active">
+            <a href="###" data-target="#tab2Content1" data-toggle="tab">
+              <i class="icon icon-copy"></i>
+              创建
+            </a>
+          </li>
+          <li>
+            <a href="###" data-target="#tab2Content2" data-toggle="tab">
+              <i class="icon icon-file-o"></i>
+              批量创建
+            </a>
+          </li>
+        </ul>
+        <div class="create_tabContent tab-content">
+          <div class="create_tabPane tab-pane fade active in" id="tab2Content1">
+            <div class="create_tabPaneContent">
+              <div class="create_imageContainer">
+                <img
+                  id="create_icon"
+                  src="../images/default.ico"
+                  alt="网站图标"
+                />
+                <div
+                  id="create_iconUpdate"
+                  class="create_iconUpdate"
+                  data-toggle="tooltip"
+                  data-tip-class="tooltip-primary"
+                  data-placement="left"
+                  title="抓取当前标签页信息（不支持chrome扩展页）"
+                >
+                  <i class="icon icon-cloud-download"></i>
+                </div>
+              </div>
+              <ul class="create_content">
+                <li>
+                  <label for="create_webNameInput">网站名</label>
+                  <div
+                    class="create_contentInput create_webNameContent input-control has-icon-left"
+                  >
+                    <input
+                      id="create_webNameInput"
+                      type="text"
+                      class="form-control"
+                      placeholder="请输入网站名"
+                      required="true"
+                    />
+                    <label
+                      for="create_webNameInput"
+                      class="input-control-icon-left"
+                    >
+                      <i class="icon icon-globe"></i>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <label for="create_userInput">用户名</label>
+                  <div
+                    class="create_contentInput create_userContent input-control has-icon-left"
+                  >
+                    <input
+                      id="create_userInput"
+                      type="text"
+                      class="form-control"
+                      placeholder="请输入用户名"
+                      required="true"
+                    />
+                    <label
+                      for="create_userInput"
+                      class="input-control-icon-left"
+                    >
+                      <i class="icon icon-user"></i>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <label for="create_passwordInput">密码</label>
+                  <div
+                    class="create_contentInput create_passwordContent input-control has-icon-left"
+                  >
+                    <input
+                      id="create_passwordInput"
+                      type="password"
+                      class="form-control"
+                      placeholder="请输入密码"
+                      required="true"
+                    />
+                    <label
+                      for="create_passwordInput"
+                      class="input-control-icon-left"
+                    >
+                      <i class="icon icon-key"></i>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+              <div class="create_buttonGroup">
+                <button id="create_clearBtn" class="btn" type="button">
+                  清空
+                </button>
+                <button
+                  id="create_saveBtn"
+                  class="btn btn-primary"
+                  type="button"
+                >
+                  保存
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="create_tabPane tab-pane fade" id="tab2Content2">
+            <div class="create_tabPaneContent">
+              <p>待开发...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <ul class="navMenu">
+        <li>
+          <a href="/html/popup.html">
+            <i class="icon icon-list"></i>
+            <span>列表</span>
+          </a>
+        </li>
+        <li class="navMenuItemActive">
+          <a href="/html/create.html">
+            <i class="icon icon-plus"></i>
+            <span>添加</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/manage.html">
+            <i class="icon icon-wrench"></i>
+            <span>管理</span>
+          </a>
+        </li>
+        <li>
+          <a href="/html/about.html">
+            <i class="icon icon-github"></i>
+            <span>关于</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script src="/js/dependent/jquery.js"></script>
+  <script src="/js/dependent/zui.min.js"></script>
+  <script src="/js/utils.js"></script>
+  <script src="/js/postMessage.js"></script>
+  <script src="/js/class/Login.js"></script>
+  <script src="/js/create.js"></script>
+</html>

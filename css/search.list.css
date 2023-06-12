@@ -1,0 +1,36 @@
+.searchContainer {
+  margin-bottom: 16px;
+}
+
+#searchbox input {
+  height: 40px;
+  border-radius: 4px !important;
+}
+
+#searchbox label {
+  height: 40px;
+  line-height: 40px;
+}
+
+#searchbox label i {
+  font-size: 16px;
+}
+
+.loginList {
+  flex: 1;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.loginList::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.noData {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,123 @@
+.main .create_nav a {
+  color: #999;
+}
+
+.main .create_nav .active a {
+  color: #000 !important;
+}
+
+.main .create_tabContent {
+  flex: 1;
+  margin-top: 16px;
+}
+
+.main .create_tabPane {
+  height: 100%;
+}
+
+.main .create_tabPane>.create_tabPaneContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.main .create_tabPane>*:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.create_imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.create_imageContainer img {
+  width: 100px;
+  height: 100px;
+}
+
+.create_iconUpdate {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.create_iconUpdate i {
+  font-size: 20px;
+}
+
+.create_content {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.create_content li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.create_content li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.create_content li>label {
+  margin-right: 16px;
+  width: 60px;
+  font-size: 14px;
+  text-align-last: justify;
+  font-weight: normal;
+}
+
+.create_content li>label::after {
+  content: '*';
+  color: red;
+}
+
+.create_content li .create_contentInput {
+  flex: 1;
+}
+
+.create_buttonGroup {
+  display: flex;
+  justify-content: end;
+  padding: 25px 0;
+}
+
+.create_buttonGroup>* {
+  width: 60px;
+  margin-left: 10px;
+}
+
+.create_webNameContent::after {
+  content: '网站名为必填项';
+  font-size: 12px;
+  color: red;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+.create_userContent::after {
+  content: '用户名为必填项';
+  font-size: 12px;
+  color: red;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+.create_passwordContent::after {
+  content: '密码为必填项';
+  font-size: 12px;
+  color: red;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
